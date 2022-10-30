@@ -1,0 +1,180 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(20, 15, 15);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu{
+    position: absolute;
+    width: 400px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-content{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 14px;
+}
+
+.list-instructions{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 2rem;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group .name-input{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.input-group .name-input input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 .8rem;
+    font-size: 18px;
+    color: rgb(30, 30, 30);
+}
+
+.input-group .level-input{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.input-group .level-input select{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 0 .8rem;
+    font-size: 18px;
+    color: gray;
+}
+
+.btn-wrapper{
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.btn-wrapper .btn-menu{
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgba(250, 128, 114, .6);
+    pointer-events: none;
+    color: white;
+}
+
+.btn-wrapper .btn-menu:hover{
+    background-color: rgb(228, 108, 94);
+}
+
+.paused{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.paused-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gameover{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.gameover-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-gameover{
+    padding: .5rem .7rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: salmon;
+    cursor: pointer;
+}
+
+.btn-gameover:hover{
+    background-color: rgb(228, 108, 94);
+}
+
+canvas{
+    background-color: rgb(25, 25, 25);
+    border-radius: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-content">
+                <div class="heading">
+                    <h1>Game Instruction</h1>
+                </div>
+                <div class="list-instructions">
+                    <p>1. To move the ship, player can use "Arrow" keys</p>
+                    <p>2. The score will be increased if player shoot the enemies</p>
+                    <p>3. To move the ship, player can use "Arrow" keys</p>
+                    <p>4. Select your level and input your name before play the game</p>
+                    <p>5. Press "Esc" to open the pause popup</p>
+                </div>
+                <div class="input-group">
+                    <div class="name-input">
+                        <input type="text" name="name" id="name" class="name" placeholder="Input your name...">
+                    </div>
+                    <div class="level-input">
+                        <select name="level" id="level" class="level">
+                            <option value="easy" selected>Easy</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button class="btn-menu">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="paused">
+            <div class="paused-content">
+                <div class="heading">
+                    <h1>Paused</h1>
+                </div>
+                <div class="content">
+                    <p>Press "Esc" again to play the game</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gameover">
+            <div class="gameover-content">
+                <div class="heading">
+                    <h1>Gameover</h1>
+                </div>
+                <div class="content">
+                    <p>Your total score is <span class="score">0</span></p>
+                </div>
+                <button class="btn-gameover">Restart</button>
+            </div>
+        </div>
+
+        <canvas id="game"></canvas>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
